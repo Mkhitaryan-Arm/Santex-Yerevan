@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Ремонт ванных комнат в Ереване | Укладка плитки и сантехника Master +</title>
+<title>Ремонт ванных комнат в Ереване | Укладка плитки и сантехника | santexnika-erevan santex-erevan</title>
 <meta charset="UTF-8">
 <link rel="icon" href="favicon.png" type="image/png" width="32" height="32">
 <meta name="description" content="Мастер Артак Мхитарян: Профессиональный ремонт санузлов под ключ в Ереване. Укладка плитки, замена труб, установка сантехники. Опыт 10+ лет. Звоните: +374 77 689191">
@@ -80,24 +80,21 @@ body {font-size:16px;}
 </head>
 <body>
 
-  <h1 class="asd">Сантехник в Ереване — ремонт ванных комнат под ключ</h1>
-
-<p class="dsa">
-Профессиональный сантехник в Ереване. 
-Ремонт ванных комнат, установка сантехники, замена труб, укладка плитки.
-Работаем по всему Еревану и пригородам.
-</p>
+<title>Сантехник в Ереване — вызов мастера 24/7 | Master +</title>
+<meta name="description" content="Сантехник в Ереване: установка и замена труб, смесителей, унитазов, устранение засоров. Быстрый выезд. Звоните +374 77 689191">
+<h1 class="asd">Сантехник в Ереване</h1>
+<h2 class="dsa">Услуги сантехника в Ереване</h2>
 
   <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Master +</b></h3>
+    <h3 class="w3-padding-64"><b>Santex-Erevan</b></h3>
   </div>
 <div class="w3-bar-block">
   
   <div id="google_translate_element" style="padding: 15px;"></div>
   <div class="w3-container" style="max-width: 250px;">
-    <div id="google_translate_element"></div>
+
 </div>
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
   <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Works</a>
@@ -109,7 +106,7 @@ body {font-size:16px;}
 
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>Master +</span>
+  <span>Santex-Erevan</span>
 </header>
 
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -207,15 +204,120 @@ body {font-size:16px;}
     </div>
   </div>
 
+<div class="w3-container w3-padding-64 w3-light-grey" id="clientRequest">
+  <div class="w3-content" style="max-width:800px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Заявка клиента.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Опишите проблему — мы быстро свяжемся с вами.</p>
+
+    <div class="w3-card-4 w3-white w3-padding-large w3-margin-top">
+      <form id="clientForm"
+            action="https://script.google.com/macros/s/ТВОЙ_ID/exec"
+            method="POST">
+
+        <!-- чтобы Apps Script понимал, что это клиентская заявка -->
+        <input type="hidden" name="type" value="client">
+
+        <div class="w3-section">
+          <label><i class="fa fa-user"></i> Имя</label>
+          <input class="w3-input w3-border" type="text" name="name" placeholder="Ваше имя" required>
+        </div>
+
+        <div class="w3-section">
+          <label><i class="fa fa-phone"></i> Телефон</label>
+          <input class="w3-input w3-border" type="text" name="phone" placeholder="+374..." required>
+        </div>
+
+        <div class="w3-section">
+          <label><i class="fa fa-map-marker"></i> Адрес (район/улица)</label>
+          <input class="w3-input w3-border" type="text" name="address" placeholder="Ереван, Арабкир..." required>
+        </div>
+
+        <div class="w3-section">
+          <label><i class="fa fa-exclamation-triangle"></i> Что случилось?</label>
+          <select class="w3-input w3-border" name="problem">
+            <option value="Засор">Засор</option>
+            <option value="Течёт">Течёт</option>
+            <option value="Замена сантехники">Замена сантехники</option>
+            <option value="Ремонт ванной под ключ">Ремонт ванной под ключ</option>
+            <option value="Другое">Другое</option>
+          </select>
+        </div>
+
+        <div class="w3-section">
+          <label><i class="fa fa-commenting"></i> Описание (подробнее)</label>
+          <textarea class="w3-input w3-border" name="message" rows="5"
+            placeholder="Например: течёт смеситель, нужен выезд сегодня после 18:00"></textarea>
+        </div>
+
+        <button type="submit" class="w3-button w3-block w3-red w3-padding-large">
+          Отправить заявку
+        </button>
+      </form>
+
+      <div id="clientSuccess" style="display:none;" class="w3-panel w3-green w3-padding-16 w3-margin-top">
+        Спасибо! Заявка отправлена. Мы скоро свяжемся с вами.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('clientForm');
+  const success = document.getElementById('clientSuccess');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const btn = form.querySelector('button[type="submit"]') || form.querySelector('button');
+    const oldText = btn ? btn.textContent : "Отправить заявку";
+
+    if (btn) { btn.disabled = true; btn.textContent = "Отправка..."; }
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      mode: 'no-cors'
+    })
+    .then(() => {
+      form.style.display = 'none';
+      if (success) success.style.display = 'block';
+    })
+    .catch(() => {
+      alert('Ошибка! Попробуйте ещё раз или напишите нам в WhatsApp.');
+      if (btn) { btn.disabled = false; btn.textContent = oldText; }
+    });
+  });
+});
+</script>
+
 
 <div class="w3-container w3-padding-64 w3-light-grey" id="vacancies">
   <div class="w3-content" style="max-width:800px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Вакансии.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>Мы расширяем команду! Если вы профессиональный плиточник или сантехник в Ереване, заполните анкету ниже.</p>
-
+<p>
+  Открытые вакансии:
+<br>
+🔧 Сантехник (монтаж и замена труб, установка сантехники, устранение засоров)
+<br>
+🧱 Плиточник (укладка плитки, керамогранита, мозаики)
+<br>
+🛠 Мастер по ремонту ванных комнат под ключ
+<br>
+🎨 Маляр-штукатур (шпаклёвка, покраска, выравнивание стен)
+<br>
+🧰 Мастер-универсал (мелкий и комплексный ремонт)
+<br>
+🪚 Гипсокартонщик (перегородки, потолки, короба)
+<br>
+⚡ Электрик (внутренняя проводка, розетки, освещение)
+</p>
     <div class="w3-card-4 w3-white w3-padding-large w3-margin-top">
-      <form id="vacancyForm" action="https://script.google.com/macros/s/AKfycbwfDUi3XOtkifFOcYq_eDBtu-9ahZy6OoqEtI1Oo1I9OFmlIsveImvDwHo80yznbs_J9g/exec" method="POST">
+      <form id="vacancyForm" action="https://script.google.com/macros/s/AKfycbxoVJgm3Te4KOm0Y4e8PrycsVOTsqj2RreVn7Tfm093G115E0kC4tlKgoufsl2JS9gYcA/exec" method="POST">
         <div class="w3-section">
           <label><i class="fa fa-user"></i> Имя и Фамилия</label>
           <input class="w3-input w3-border" type="text" name="name" placeholder="Армен Саргсян" required>
@@ -225,7 +327,11 @@ body {font-size:16px;}
           <select class="w3-input w3-border" name="specialty">
             <option value="Плиточник">Плиточник</option>
             <option value="Сантехник">Сантехник</option>
-            <option value="Мастер под ключ">Мастер под ключ</option>
+            <option value="Мастер по ремонту ванных комнат под ключ">Мастер по ремонту ванных комнат под ключ</option>
+            <option value="Маляр-штукатур">Маляр-штукатур</option>
+            <option value="Мастер-универсал">Мастер-универсал</option>
+            <option value="Гипсокартонщик">Гипсокартонщик</option>
+            <option value="Электрик">Электрик</option>
             <option value="Другое">Другое</option>
           </select>
         </div>
@@ -248,6 +354,12 @@ body {font-size:16px;}
 
 <script>
 // Скрипт, чтобы страница не перезагружалась при отправке
+function doPost(e) {
+  var name = (e.parameter.name || "").trim();
+  var phone = (e.parameter.phone || "").trim();
+  var email = (e.parameter.email || "").trim();
+
+
 const form = document.getElementById('vacancyForm');
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -266,7 +378,26 @@ form.addEventListener('submit', e => {
         submitButton.innerHTML = "Отправка";
     });
 });
+  var body =
+    "✅ Новая регистрация на сайте!\n\n" +
+    "Имя: " + (name || "—") + "\n" +
+    "Телефон: " + (phone || "—") + "\n" +
+    "Email: " + (email || "—") + "\n\n" +
+    "Время: " + new Date().toString();
+
+  MailApp.sendEmail({
+    to: "arturgamesbar@gmail.com",
+    subject: "🔔 Новая регистрация на сайте",
+    body: body
+  });
+
+  return ContentService
+    .createTextOutput("OK")
+    .setMimeType(ContentService.MimeType.TEXT);
+}
 </script>
+
+
 
 <div class="w3-container" id="packages" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Цены.</b></h1>
@@ -449,9 +580,9 @@ function onClick(element) {
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-            pageLanguage: 'en',
+            pageLanguage: 'ru',
             // Выбираем только нужные языки, чтобы они не перекрывали друг друга
-            includedLanguages: 'ru,en,hy,fr,de,es,it,zh-CN,en', 
+            includedLanguages: 'en,hy,fr,de,es,it,zh-CN,en', 
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
             autoDisplay: false
         }, 'google_translate_element');
